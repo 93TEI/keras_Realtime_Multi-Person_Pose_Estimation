@@ -6,7 +6,7 @@ import cv2
 
 import util
 
-
+#인자 : 찾을이미지, 등 ...
 def extract_parts(input_image, params, model, model_params):
     multiplier = [x * model_params['boxsize'] / input_image.shape[0] for x in params['scale_search']]
 
